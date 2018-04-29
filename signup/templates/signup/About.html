@@ -1,0 +1,193 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+		
+		<title> About Page</title>
+		<meta charset="utf-8" />
+		
+		<link rel="icon" type="image/png" href="images/title4.png">
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="{% static 'signup/css/bootstrap.min.css'%}">
+		<link rel="stylesheet" type="text/css" href="{% static 'signup/index.css'%}"/>
+
+		<!-- html5shiv and respond-->
+		<script type="text/javascript" src="{% static 'signup/js/html5shiv.min.js'%}"></script>
+		<script type="text/javascript" src="{% static 'signup/js/respond.min.js'%}"></script>
+		
+		<!--<script type="text/javascript" src="jquery-3.0.0.min.js"></script>==>
+		<!--<script type="text/javascript" src="jquery-ui.min.js"></script>-->
+		
+		<style type="text/css">
+			
+			
+			#body{
+			font-family:arial,sans-serif;
+			padding:3px;}
+			
+			#header{
+			width:100%;
+			height:96px;
+			background-color:#333;
+			box-shadow:-1px 9px 18px 3px #331;
+			margin:0px;
+			color:White;
+			}
+			.link1{
+			margin-left: 152px;
+			color:white;}
+			a{
+			color:white;
+			margin-left:5px;
+			margin-right:25px;
+			
+			}
+			a:active{
+			color:black;
+			}
+			a:hover{
+			color:red;}
+			
+			nav{
+				background-color: #36465d;
+				height:50px;
+				box-shadow:-1px 9px 18px 3px #36463d;
+ 				
+
+			}
+			nav ul{
+				padding:10px 0px 5px 0px;
+				margin-top: 12px;
+			}
+			nav li a{
+				color:#ffffff;
+				text-decoration: none;
+				border:1px solid black;
+				border-radius:4px 4px 0 0
+				
+			}
+			nav li a:hover,nav li a:active{
+				color:white;
+				width:50px;
+				text-decoration: underline;
+				box-shadow: inset 0px 0px 8px #0f0f3a;
+				background-color: #36463d;
+				padding-left: 2px;
+				padding-top: 11px;
+				padding-right:1px; 
+				padding-bottom:15px;
+				margin-top:20px; 
+			}
+			#my a{color:white;
+				width:50px;
+				text-decoration: underline;
+				box-shadow: inset 0px 0px 8px #0f0f3a;
+				background-color: #36463d;
+				padding-left: 2px;
+				padding-top: 11px;
+				padding-right:1px; 
+				padding-bottom:15px;
+				margin-top:20px; 
+			
+			}
+
+			nav li a:visited{
+				color:white;
+				width:50px;
+				text-decoration: none;
+				box-shadow: inset 0px 0px 8px #0f0f3a;
+				background-color: #36463d;
+				padding-left: 2px;
+				padding-top: 11px;
+				padding-right:1px; 
+				padding-bottom:15px;
+				margin-top:20px;
+			}
+	
+			nav li{
+				display:inline;
+				margin-right: 0px;
+				height:50px;
+				font-size: 20px;
+			}
+		</style>
+			
+			
+		
+		
+	</head>
+
+
+	<body>
+		<!--<div id="header">
+			<div id="menu" style="margin-left: 182px;">
+				<img src="images/aas1.jpg" height="96px" width="96" style="display:inline;vertical-align:middle;"/>
+				<h2 style="display:inline;align:middle;font-size:30px;">&nbsp &nbsp &nbsp &nbsp &nbsp Indian Institute of Technology,BHU,Varanasi<span style="font-family:bradley hand ITC;">&nbsp Examination Cell</span></h2>
+				<input id="search" type="text" placeholder="Search" style="float:right;background-color:white;"/>
+			</div>
+		</div>
+		<div style="width:100%;height:30px;background-color:seagreen;margin-top:15px;box-shadow:-1px 9px 18px 3px #275;">
+			<a href="1.Index_Page.html" class="link1">Home</a>
+			<a href="#">About</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="page1.html">&nbsp;<img src="student_login.jpg" height="46px" width="177px" style="float:right;margin-right:46px;"/></a>
+			<a href="#"><img src="teacher_login.jpg" height="46px" width="177px" style="float:right;"/></a>
+			
+		
+		</div>-->
+
+		<div style="background-color:#585858;margin-bottom:-5px;box-shadow:-1px 9px 18px 3px #36463d;" class="container-fluid">
+			<img src="{% static 'signup/images/iitbhulogo.png' %}" class="img-responsive"style="margin-left:0px;display:inline;" class="img-responsive" alt="LOGO"/>
+			<img src="{% static 'signup/images/oxp.jpg' %} " class="img-rounded" height="155px" width="320px" style="float:right;display:inline;"/>
+		</div>
+		<nav>
+			<ul>
+				<li><a  href="/home/" class="link1">Home</a></li>
+				<li id="my"><a href="/about/">About</a></li>
+				<li><a href="/contactus/">Contact Us</a></li>
+				<!--<a href="2.sign_log.html">
+                                &nbsp;<img src="images/Student_login.jpg" class="img-rounded" height="46px" width="177px"
+                                    style="float:right;margin-right:46px;margin-bottom:10px;"/>
+				</a>
+				<a href="teacher_log.html"><img src="images/teacher_login2.jpg" class="img-rounded" height="46px" width="177px"
+                                   style="float:right;"/>
+				</a>-->
+		
+
+			</ul>
+		</nav>			
+
+	
+		<fieldset style="margin-top:30px;">
+			<legend style="font-size:40px;text-decoration:underline;font-family:Arial;align:center;margin-left:75px;">About</legend>
+			<div id="abstract" style="border:1px black dashed;background-color:white;width:750px;float:left;margin-left:70px;">
+			<h2 style="margin-left:10px;">Abstract</h2>
+			<div style="line-height:25px;background-image:url('images/bcg.jpg');">
+				<p style="padding:2px;margin:10px;">Examination plays a very important role in college and it is held at regular intervals . During the examination ,
+				there may be shortage of question papers , answer sheets ,malpractice ,staff alteration and other requirements of students . For these issues , examiner has to depend on man power to convey this information to exam cell .This process is time consuming and the students requirements may not be fulfilled at the right time .Currently , Exam Cell activity mostly include a lot of manual calculations and is mostly paper based .
+				In order to solve the above issues , we are desigining a Examination Cell Management System . The project aims to bring in a centralized system that will ensure the activities in the context of an examination that can be effectively managed . This project aims at desiging a system which automates the complete life cycle of the examination management .
+				This project is mainly designed for helping the exam invigilators to have a sophisticated and communication between the Examination Hall and the Exam coordinating cell . </p>
+			</div>
+			</div>
+			<div style="border:1px black dashed;background-color:white;margin-right:56px;margin-left:821px;background-image:url('images/bcg.jpg');">
+				<img src="{% static 'signup/images/aas3.jpg' %}" width="448px" />
+				<div style="line-height:20px;margin-left:5px;">
+					<p>
+					&nbsp &nbsp &nbsp &nbsp "The purpose of learning is not to give exams in class and forget about it , but to increase the knowledge until they possess an area of earth for almighty ."</p>
+					<p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp -Sunday Adelaja</p>
+					
+				</div>
+			</div>
+		</fieldset>
+
+
+</form>
+
+
+		<!--*********script************-->
+	<script type="text/javascript" src="{% static 'signup/js/bootstrap.min.js' %}"></script>
+	</body>
+</html>

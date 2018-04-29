@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<script type="text/javascript">
+		function is_checked(){
+		
+		var rules = document.getElementById('rules').checked;
+		var eva = document.getElementById('eva');
+		
+		if(rules==true){
+			eva.innerHTML="<button style='width:100px;height:50px;'>LOGIN</button>"+"    "+ "<button style='width:100px;height:50px;'>SIGNUP</button>"
+		}
+		
+		
+		
+		}
+		
+		</script>
+	</head>	
+	<body>
+	
+		<input type="checkbox" name="rules"  value="rules" id="rules"/>
+		
+		I have read all rules<br>
+		<input type="button" value="Want to proceed" onclick="is_checked();" name="submit"/>
+	
+	
+	<p id="eva"></p>
+	</body>
+
+</html>

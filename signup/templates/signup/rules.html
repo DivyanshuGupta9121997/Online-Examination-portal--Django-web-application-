@@ -1,0 +1,187 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="{% static 'signup/images/title4.png'%}">
+			<title> Exam Cell-Rules</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="{% static 'signup/css/bootstrap.min.css'%}">
+		<link rel="stylesheet" type="text/css" href="{% static 'signup/index.css'%}"/>
+
+		<!-- html5shiv and respond-->
+		<script type="text/javascript" src="{% static 'signup/js/html5shiv.min.js'%}"></script>
+		<script type="text/javascript" src="{% static 'signup/js/respond.min.js'%}"></script>
+		
+<style type="text/css">
+*{
+	padding:3px;
+	font-family:sans-serif;
+}
+/*h1{
+	background-color:gray;
+	color:white;
+	font-family:Sans-serif;
+	padding:10px;
+	text-align:center;
+	margin:25px 10px 5px 5px;
+	box-shadow: -3px 34px 29px -13px black;
+	
+}
+ul  {
+	margin:40px 20px ;
+	border:3px dashed gray;
+	font-famaly:Arial;
+    padding:10px;
+	padding-left:20px;
+	}*/
+#checkbox{
+	padding-left:300px;
+}	
+#sub{
+    padding-left:600px;
+    padding-top:4px;	
+ }
+#header{
+			width:100%;
+			height:96px;
+			background-color:#333;
+			box-shadow:-1px 9px 18px 3px #331;
+			margin:0px;
+			color:White;
+			}
+.link1{
+			margin-left: 152px;
+			color:white;}
+		a{
+		color:white;
+		margin-left:5px;
+		margin-right:25px;
+		}
+				nav{
+				background-color: #36465d;
+				height:50px;
+				box-shadow:-1px 9px 18px 3px #36463d;
+ 				margin-top:15px;
+
+			}
+			nav ul{
+				padding:10px 0px 5px 0px;
+				margin-top: 0px;
+			}
+			nav li a{
+				color:#ffffff;
+				text-decoration: none;
+				border:1px solid transparent;
+				border-radius:4px 4px 0 0
+				
+			}
+			nav li a:hover,nav li a:active{
+				color:white;
+				width:50px;
+				text-decoration: underline;
+				box-shadow: inset 0px 0px 8px #0f0f3a;
+				background-color: #36463d;
+				padding-left: 2px;
+				padding-top: 11px;
+				padding-right:1px; 
+				padding-bottom:15px;
+				margin-top:20px; 
+			}
+			nav li a:visited{
+				color:white;
+				width:50px;
+				text-decoration: none;
+				box-shadow: inset 0px 0px 8px #0f0f3a;
+				background-color: #36463d;
+				padding-left: 2px;
+				padding-top: 11px;
+				padding-right:1px; 
+				padding-bottom:15px;
+				margin-top:20px;
+			}
+	
+			nav li{
+				display:inline;
+				margin-right: 0px;
+				height:50px;
+				font-size: 20px;
+			}
+ 
+</style>
+</head>
+	<body id="body">
+
+	<!--<div id="header">
+			<div id="menu" style="margin-left: 182px;">
+				<img src="images/aas1.jpg" height="96px" width="96" style="display:inline;vertical-align:middle;"/>
+				<h2 style="display:inline;align:middle;font-size:30px;">&nbsp &nbsp &nbsp &nbsp &nbsp Indian Institute of Technology,BHU,Varanasi<span style="font-family:bradley hand ITC;">&nbsp Examination Cell</span></h2>
+				<input id="search" type="text" placeholder="Search" style="float:right;background-color:white;"/>
+			</div>
+		</div>
+		<div style="width:100%;height:30px;background-color:seagreen;margin-top:15px;">
+			<a href="1.Index_Page.html" class="link1">Home</a>
+			<a href="About.html">About</a>
+			<a href="contact.html">Contact Us</a>
+			<!--<a href="#">&nbsp;<img src="student_login.jpg" height="46px" width="177px" style="float:right;margin-right:46px;"/></a>
+			<a href="#"><img src="teacher_login.jpg" height="46px" width="177px" style="float:right;"/></a>
+			
+		
+		</div>-->
+
+		<div style="background-color:#585858;margin-bottom:-5px;box-shadow:-1px 9px 18px 3px #36463d;" class="container-fluid">
+			<img src="{% static 'signup/images/iitbhulogo.png' %}" class="img-responsive"style="margin-left:0px;display:inline;" class="img-responsive" alt="LOGO"/>
+			<img src="{% static 'signup/images/oxp.jpg' %} " class="img-rounded" height="155px" width="320px" style="float:right;display:inline;"/>
+		</div>
+		<nav>
+			<ul>
+				<li><a  href="#" class="link1">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="/home/" style="margin-left:650px">Logout</a></li>
+				<!--<a href="2.sign_log.html">
+                                &nbsp;<img src="images/Student_login.jpg" class="img-rounded" height="46px" width="177px"
+                                    style="float:right;margin-right:46px;margin-bottom:10px;"/>
+				</a>
+				<a href="teacher_log.html"><img src="images/teacher_login2.jpg" class="img-rounded" height="46px" width="177px"
+                                   style="float:right;"/>
+				</a>-->
+		
+
+			</ul>
+		</nav>	
+
+
+
+
+		<div class="container" id="bcg" style="margin-top:25px;border:dashed gray 2px;
+			padding-bottom:20px;">
+		<h1 style="font-family:corola;">RULES AND REGULATIONS</h1>
+		<ul>
+			<li>Do not proceed to exam page before the permission of examiner</li>
+			<li>Calculators and log-books are not allowed</li>
+			<li>If caught cheating your exam will be cancelled on spot</li>
+			<li>Remember submitting your result in the end</li>
+		</ul>
+
+		<form id="check" method="post" action="">{%csrf_token%}
+
+			<div id="checkbox">
+			<input type="checkbox" id="proceed" name="checkin" value= "on" />
+			<label for="proceed">I agree to Proceed to the 'EXAMINATION PAGE' & I have read the Rules and Regulations properly
+                         </label><br />
+			</div>
+			<div id="sub">
+				<input type="submit" class="btn btn-danger btn-md" name="proceed" value="Proceed"/>
+			</div>
+		</form> 	
+		</div>
+
+
+			<!--*********script************-->
+		<script type="text/javascript" src="{% static 'signup/js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>

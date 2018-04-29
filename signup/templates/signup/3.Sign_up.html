@@ -1,0 +1,219 @@
+{% load staticfiles %}
+<html>
+<head>
+		<link rel="icon" type="image/png" href="{% static 'signup/images/title4.png'%}">
+		<title>EXAM_CELL - STUDENT'S SIGN-UP PAGE</title>
+
+
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="{% static 'signup/css/bootstrap.min.css'%}">
+		<link rel="stylesheet" type="text/css" href="{% static 'signup/index.css'%}"/>
+
+		<!-- html5shiv and respond-->
+		<script type="text/javascript" src="{% static 'signup/js/html5shiv.min.js'%}"></script>
+		<script type="text/javascript" src="{% static 'signup/js/respond.min.js'%}"></script>
+
+
+<style type="text/css">
+			body{
+			background-color:white;
+			font-family:sans-serif;
+			padding:3px;}
+			
+			#header{
+			width:100%;
+			height:96px;
+			background-color:#333;
+			box-shadow:-1px 9px 18px 3px #331;
+			margin:0px;
+			color:White;
+			}
+			.link1{
+			margin-left: 152px;
+			color:white;}
+			a{
+			color:green;
+			margin-left:5px;
+			margin-right:25px;
+			
+			}
+			a:active{
+			color:black;
+			}
+			a:hover{
+			color:red;}
+			/*
+				#su{
+				font-family:Arial;
+				color:darkslateblue;
+				background-color:none;background-image:url('2.jpg')
+				text-align:center;}
+				-->
+				
+				<!--body{
+				background-color:gray;
+				background-image:url('1.jpg');
+				background-repeat:no-repeat;}
+				h1{text-align:center;
+				font-family:Arial;
+				color:darkslategray;
+				background-color:cornflowerBlue;
+			}*/
+			nav{
+				background-color: #36465d;
+				height:50px;
+				box-shadow:-1px 9px 18px 3px #36463d;
+ 				
+
+			}
+			nav ul{
+				padding:10px 0px 5px 0px;
+				margin-top: 12px;
+			}
+			nav li a{
+				color:#ffffff;
+				text-decoration: none;
+				border:1px solid transparent;
+				border-radius:4px 4px 0 0
+				
+			}
+			nav li a:hover,nav li a:active{
+				color:white;
+				width:50px;
+				text-decoration: underline;
+				box-shadow: inset 0px 0px 8px #0f0f3a;
+				background-color: #36463d;
+				padding-left: 2px;
+				padding-top: 11px;
+				padding-right:1px; 
+				padding-bottom:15px;
+				margin-top:20px; 
+			}
+			nav li a:visited{
+				color:white;
+				width:50px;
+				text-decoration: none;
+				box-shadow: inset 0px 0px 8px #0f0f3a;
+				background-color: #36463d;
+				padding-left: 2px;
+				padding-top: 11px;
+				padding-right:1px; 
+				padding-bottom:15px;
+				margin-top:20px;
+			}
+	
+			nav li{
+				display:inline;
+				margin-right: 0px;
+				height:50px;
+				font-size: 20px;
+			}
+</style>
+</head>
+
+<body>
+<!--
+		<div id="header">
+			<div id="menu" style="margin-left: 182px;">
+				<img src="images/aas1.jpg" height="96px" width="96" style="display:inline;vertical-align:middle;"/>
+				<h2 style="display:inline;align:middle;font-size:30px;">&nbsp &nbsp &nbsp &nbsp &nbsp Indian Institute of Technology,BHU,Varanasi<span style="font-family:bradley hand ITC;">&nbsp Examination Cell</span></h2>
+				<input id="search" type="text" placeholder="Search" style="float:right;background-color:white;"/>
+			</div>
+		</div>
+		<div style="width:100%;height:30px;background-color:seagreen;box-shadow:-1px 9px 18px 3px #275;margin-top:15px;">
+			<a href="1.Index_Page.html" class="link1">Home</a>
+			<a href="About.html" style="color:white;">About</a>
+			<a href="contact.html" style="color:white;">Contact Us</a>-->
+			<!--<a href="page1.html">&nbsp;<img src="student_login.jpg" height="46px" width="177px" style="float:right;margin-right:46px;"/></a>
+			<a href="#"><img src="teacher_login.jpg" height="46px" width="177px" style="float:right;"/></a>
+			
+		
+		</div>-->
+		<div style="background-color:#585858;margin-bottom:-5px;box-shadow:-1px 9px 18px 3px #36463d;" class="container-fluid">
+			<img src="{% static 'signup/images/iitbhulogo.png' %}" class="img-responsive"style="margin-left:0px;display:inline;" class="img-responsive" alt="LOGO"/>
+			<img src="{% static 'signup/images/oxp.jpg' %} " class="img-rounded" height="155px" width="320px" style="float:right;display:inline;"/>
+		</div>
+		<nav>
+			<ul>
+				<li><a  href="/home/" class="link1">Home</a></li>
+				<li><a href="/about/">About</a></li>
+				<li><a href="/contactus/">Contact Us</a></li>
+				<!--<a href="2.sign_log.html">
+                                &nbsp;<img src="images/Student_login.jpg" class="img-rounded" height="46px" width="177px"
+                                    style="float:right;margin-right:46px;margin-bottom:10px;"/>
+				</a>
+				<a href="teacher_log.html"><img src="images/teacher_login2.jpg" class="img-rounded" height="46px" width="177px"
+                                   style="float:right;"/>
+				</a>-->
+		
+
+			</ul>
+		</nav>
+
+		<div id="bcg">
+		<div class="container"><p align="center" style="background-color:rgb(71,180,216);box-shadow:-1px 7px 18px 3px rgb(69,170,149);font-size:30px;font-family:sans-serif;margin-top:10px;
+                     ">STUDENT'S SIGN-UP PAGE :</p></div>
+
+		<form action="" method="POST">{%csrf_token%}
+			
+			<fieldset id="fieldset_box" align="center" style="width:1000px;margin:auto 150px;">
+				<label for="fname" style="position:relative;left:0px;">FIRST NAME</label> 
+				<label for="lname" style="margin-left:120px;">LAST NAME</label><br />
+				<input type="text" id="fname" name="firstname" placeholder="First Name" value=""/>
+				<input type="text" id="lname" name="lastname" placeholder="Last Name" value=""/>
+								<br/><br/>
+								
+				<label for="email">E-mail</label><br />
+				<input type="email" id="email" name="email" placeholder="Username@hotmail.com" maxlength="80" size="40"/>
+								<br/><br/>
+				<label for="password">Password</label><br />
+				<input type="password" id="password" name="password" placeholder="password" maxlength="8" size="30"/>
+								<br/><br/>
+
+				<label for="contact" >Contact:</label><br />
+				<input type="text" id="contact" name="contact" placeholder="+91(0)"/><br /><br />
+							
+				<label for="dept.">Department</label><br />
+				<select name="dept." >
+					<option value="CSE">Computer Science and Engg.</option>
+					<option value="MnC">Mathematics and Computing</option>
+					<option value="ECE">Electronics Engg.</option>
+					<option value="EEE">Electrical Engg.</option>
+				</select>
+								<br /><br />
+							
+				<label for="sem">Semester</label><br />
+				<select name="sem" >
+					<option value="1">I</option>
+					<option value="2">II</option>
+					<option value="3">III</option>
+					<option value="4">IV</option>
+				</select>
+								<br /><br />
+							
+				<label for="deg.">Degree</label><br />
+				<select name="deg." >
+					<option value="B.Tech">Bachlors of Technology</option>
+					<option value="M.Tech">Mastors of Tecnology</option>
+					<option value="IDD">Integrated Dual Degree</option>
+					<option value="IMD">Integrated Master Degree</option>
+				</select>
+								<br/><br/>
+						
+				<input type="submit" class="btn btn-primary" name="submit" value="SUBMIT"/>
+				<input type="reset" class="btn btn-info" name="reset" value="RESET"/>
+				<!--<a href="1.Index_Page.html"><button>CANCEL</button></a>-->
+				<p>Note:If already logged in , <a href="/login/">Click here to reach login page</a></p>
+			</fieldset>
+
+		</form>
+	</div>
+
+	<!--*********script************-->
+		<script type="text/javascript" src="{% static 'signup/js/bootstrap.min.js' %}"></script>
+		
+</body>
+</html>

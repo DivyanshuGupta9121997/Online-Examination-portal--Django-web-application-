@@ -1,0 +1,234 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<link rel="icon" type="image/png" href="{% static 'signup/images/title4.png'%}">
+		<title> Examination Cell - 2.sign_log 
+		</title>
+
+
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="{% static 'signup/css/bootstrap.min.css'%}">
+		<!-- html5shiv and respond-->
+		<link rel="stylesheet" type="text/css" href="{% static 'signup/index.css'%}"/>
+
+		<script type="text/javascript" src="{% static 'signup/js/html5shiv.min.js'%}"></script>
+		<script type="text/javascript" src="{% static 'signup/js/respond.min.js'%}"></script>
+		
+		<script type="text/javascript">
+				function is_checked()
+				{
+				 var rules = document.getElementById('rules').checked;
+				 var eva = document.getElementById('eva');
+				 
+				 if(rules)
+				 eva.innerHTML="<a href='/login/'><button class='btn btn-primary' name = 'log' value='1'>LOGIN</button></a>" + "      " + "<a href='/signup/'><button class='btn btn-primary' name='signin' value='2'>SIGN-UP</button></a>";
+				 
+				 }
+		</script>
+		<style type="text/css">
+				*{
+				font-family:sans-serif;
+				}
+				#header{
+					width:100%;
+					height:96px;
+					background-color:#333;
+					box-shadow:-1px 9px 18px 3px #331;
+					margin:0px;
+					color:White;
+					}
+				.link1{
+					margin-left: 152px;
+					color:white;}
+					a{
+					color:white;
+					margin-left:5px;
+					margin-right:25px;
+					
+					}
+				a:active{
+					color:black;
+					}
+					a:hover{
+					color:red;}
+				nav{
+				background-color: #36465d;
+				height:50px;
+				box-shadow:-1px 9px 18px 3px #36463d;
+ 				
+
+			}
+			nav ul{
+				padding:10px 0px 5px 0px;
+				margin-top: 12px;
+			}
+			nav li a{
+				color:#ffffff;
+				text-decoration: none;
+				border:1px solid transparent;
+				border-radius:4px 4px 0 0
+				
+			}
+			nav li a:hover,nav li a:active{
+				color:white;
+				width:50px;
+				text-decoration: underline;
+				box-shadow: inset 0px 0px 8px #0f0f3a;
+				background-color: #36463d;
+				padding-left: 2px;
+				padding-top: 11px;
+				padding-right:1px; 
+				padding-bottom:15px;
+				margin-top:20px; 
+			}
+			nav li a:visited{
+				color:white;
+				width:50px;
+				text-decoration: none;
+				box-shadow: inset 0px 0px 8px #0f0f3a;
+				background-color: #36463d;
+				padding-left: 2px;
+				padding-top: 11px;
+				padding-right:1px; 
+				padding-bottom:15px;
+				margin-top:20px;
+			}
+	
+			nav li{
+				display:inline;
+				margin-right: 0px;
+				height:50px;
+				font-size: 20px;
+			}
+				#login{
+						background-color:gray;
+						color:white;
+						width:100px;
+						height:50px;
+						}	
+				#signup{
+						background-color:gray;
+						color:white;
+						width:100px;
+						height:50px;
+							}
+					<!--#head{
+					background-color:green;
+					padding:20px;
+					position:fixed;
+					top:200px;
+
+					}-->	
+
+				.abs{
+						margin-top:10px;
+						margin-bottom:10px;
+						background-image:url('images/bcg.jpg');margin-bottom:0px;
+						padding-bottom:20px;
+					}
+				.abs h3{
+						background-color:#4797d8;
+						font-family:sans-serif;
+						color:white;
+						font-style:italic;
+						font-size:15px;
+						padding:20px;
+						padding-left:200px;
+						border-style:outset;
+						border:2px outset white;
+						box-shadow:-1px 7px 8px 3px #717983;
+					}	
+		</style>	
+	</head>
+	<body id="body">
+		<!--<div id="header">
+					<div id="menu" style="margin-left: 182px;">
+						<img src="images/aas1.jpg" height="96px" width="96" style="display:inline;vertical-align:middle;"/>
+						<h2 style="display:inline;align:middle;font-size:30px;">&nbsp; &nbsp; &nbsp; &nbsp; Indian Institute of Technology,BHU,Varanasi<span style="font-family:bradley hand ITC;">&nbsp Examination Cell</span></h2>-->
+						<!--<input id="search" type="text" placeholder="Search" style="float:right;background-color:white;"/>-->
+					<!--</div>
+		</div>
+		<div style="width:100%;height:30px;background-color:seagreen;margin-top:15px;">
+			<a href="1.Index_Page.html" class="link1">Home</a>
+			<a href="About.html">About</a>
+			<a href="contact.html">Contact Us</a>-->
+			<!--<a href="#">&nbsp;<img src="student_login.jpg" height="46px" width="177px" style="float:right;margin-right:46px;"/></a>
+			<a href="#"><img src="teacher_login.jpg" height="46px" width="177px" style="float:right;"/></a>-->
+		<!--</div>
+		
+		<div id="head">
+		<button id="login">login</button>
+		<button id="signup">Sign-Up</button>
+		</div>-->
+
+		
+		<div style="background-color:#585858;margin-bottom:-5px;box-shadow:-1px 9px 18px 3px #36463d;" class="container-fluid">
+			<img src="{% static 'signup/images/iitbhulogo.png' %}" class="img-responsive"style="margin-left:0px;display:inline;" class="img-responsive" alt="LOGO"/>
+			<img src="{% static 'signup/images/oxp.jpg' %} " class="img-rounded" height="155px" width="320px" style="float:right;display:inline;"/>
+		</div>
+		<nav>
+			<ul>
+				<li><a  href="/home/" class="link1">Home</a></li>
+				<li><a href="/about/">About</a></li>
+				<li><a href="/contactus/">Contact Us</a></li>
+				<!--<a href="2.sign_log.html">
+                                &nbsp;<img src="images/Student_login.jpg" class="img-rounded" height="46px" width="177px"
+                                    style="float:right;margin-right:46px;margin-bottom:10px;"/>
+				</a>
+				<a href="teacher_log.html"><img src="images/teacher_login2.jpg" class="img-rounded" height="46px" width="177px"
+                                   style="float:right;"/>
+				</a>-->
+		
+
+			</ul>
+		</nav>	
+
+
+		<div class="abs">
+			<h3>Welcome to the Online Examination portal of INDIAN INSTITUTE OF TECHNOLOGY,(BHU),VARANASI<br />
+			Before proceeding to the Examination,<br />
+			Read the following guidelines as given below ::
+			</h3> 
+			<div>
+			<fieldset>
+				<div style="padding-left:200px;">
+				<ul>
+					<li><p>Step 1:Click on <code><cite>"Sign-Up"</cite></code> if not signed in<br />
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp else click on <code><cite>"Login"</cite></code> if already signed in</p>	</li>
+					
+					<li><p>Step 2:If there is a new <code><cite>"Sign-Up"</cite></code> fill up all your<br />
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp details (For e.g.:Name ,Email ,Contact <br />
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ,Department ,Semester) and click on <cite>"Submit"</cite></p></li>
+					
+					<li><p>Step 3:A confirmation mail will be sent to your<br />
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp E-mail address you gave and enter<br />
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 6-digit confirmation Code and click <code><cite>"confirm"</cite></code> <br /></p></li>
+					
+					<li><p>Step 4:After confirming, you will be logged in <br />
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp our database</p></li>
+					
+					<li><p>Step 5:Now ,log into your exam page<br />
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp and select your exam type</p></li>
+				
+				</ul>
+					<form style="text-align:center;padding-right:250px" id="button" method="post">
+						<input type="checkbox" name="check" value="checkbox" id="rules"/>
+						<label for="check">I have read the instructions to be followed properly</label><br />
+						<input type="button" value="Want to proceed" onclick="is_checked();"/>
+					</form>
+					<p id="eva"></p>
+				</div>
+			</fieldset>
+			</div>
+		</div>
+			<!--*********script************-->
+		<script type="text/javascript" src="{% static 'signup/js/bootstrap.min.js' %}"></script>
+	</body>
+
+</html>
